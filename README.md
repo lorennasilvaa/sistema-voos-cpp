@@ -7,13 +7,11 @@ Repositório contendo arquivos da primeira atividade avaliativa da disciplina Li
 O repositório apresenta a seguinte estrutura: 
 - `include/`: contém os arquivos de cabeçalho do projeto;
 - `src/`: contém a implementação das funções declaradas nos arquivos de cabeçalho; 
-- arquivo ``main.cpp`: arquivo principal. 
-- arquivo `àrquivo.txt`: contém um exemplo de entrada para testes. 
+- arquivo `main.cpp`: arquivo principal. 
+- arquivo `arquivo.txt`: contém um exemplo de entrada para testes.  
 Além dos arquivos `.gitignore` e `README.md`.
   
 ## Como compilar    
-
-Você pode utilizar o seguinte comando para compilar:
 
 ### No Windows, utilizando o PowerShell
 
