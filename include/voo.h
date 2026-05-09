@@ -3,7 +3,7 @@
 
 #include <vector>
 #include <memory>
-#include "astronauta.h"
+#include "Astronauta.h"
 
 using namespace std;
 

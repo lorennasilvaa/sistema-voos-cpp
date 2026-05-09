@@ -1,7 +1,7 @@
 #include <iostream>
-#include "sistema.h"
-#include "astronauta.h"
-#include "voo.h"
+#include "Sistema.h"
+#include "Astronauta.h"
+#include "Voo.h"
 
 using namespace std;
 

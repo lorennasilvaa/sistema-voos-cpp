@@ -2,8 +2,8 @@
 #define SISTEMA_H
 #include <string>
 #include <vector>
-#include "astronauta.h"
-#include "voo.h"
+#include "Astronauta.h"
+#include "Voo.h"
 
 using namespace std;
 

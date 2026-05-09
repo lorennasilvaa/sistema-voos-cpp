@@ -1,4 +1,4 @@
-#include "astronauta.h"
+#include "Astronauta.h"
 
 Astronauta::Astronauta()
 {    
