@@ -15,7 +15,7 @@ private:
     bool disponivel; 
  
 public:
-    Astronauta(); // construtor
+    Astronauta(); 
     Astronauta(string cpf, int idade, string nome);
 
     string getCpf();
@@ -28,9 +28,6 @@ public:
     void morrer();
     void ocupar();
     void liberar();
-
-    // para teste
-    //void mostrarDados();
 };
 
 #endif

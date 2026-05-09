@@ -12,7 +12,7 @@ class Voo
 private: 
     int codigo;
     int estado; // 0 = planejado | 1 = em curso | 2 = finalizado com sucesso | 3 = finalizado com explosão
-
+    
     vector<shared_ptr<Astronauta>> astronautasPassageiros;
 
 public:

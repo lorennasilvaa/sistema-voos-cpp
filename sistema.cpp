@@ -24,16 +24,7 @@ void Sistema::cadastrarAstronauta(string cpf, int idade, string nome)
         auto a = make_shared<Astronauta>(cpf, idade, nome);
         astronautas.push_back(a);
 
-        // para testes
-        cout << "cadastrou o astronauta " << endl; 
-        for (int i = 0; i < astronautas.size(); i++)
-        {
-            cout << "CPF: " << astronautas[i]->getCpf() << endl;
-            cout << "Nome: " << astronautas[i]->getNome() << endl;
-            cout << "Idade: " << astronautas[i]->getIdade() << endl;
-            cout << "Vivo: " << astronautas[i]->estaVivo() << endl;
-            cout << "Disponivel: " << astronautas[i]->estaDisponivel() << endl;
-        }
+        cout << "Astronauta cadastrado com sucesso" << endl; 
     }
 }
 
@@ -55,12 +46,8 @@ void Sistema::cadastrarVoo(int codigo)
     {
         Voo v(codigo);
         voos.push_back(v);
-        cout << "cadastrou o voo " << endl;
-        for (int i = 0; i < voos.size(); i++)
-        {
-            cout << "Codigo: " << voos[i].getCodigo() << endl;
-            cout << "Estado: " << voos[i].getEstado() << endl;
-        }
+
+        cout << "Voo cadastrado com sucesso" << endl;
     }
 }
 
@@ -129,7 +116,7 @@ void Sistema::removerAstronauta(string cpf, int codigo)
     // se o voo inserido não existir 
     if (voo == nullptr)
     {
-        cout << "O código " << codigo << " não pertence a nenhum voo cadastrado " << endl;
+        cout << "O código " << codigo << " não pertence a nenhum voo cadastrado." << endl;
         return;
     }
 
@@ -139,7 +126,7 @@ void Sistema::removerAstronauta(string cpf, int codigo)
     } 
     else
     {
-         cout << "O astronauta não fazia parte do voo." << endl;
+         cout << "O astronauta não foi removido, porque não fazia parte do voo." << endl;
     }
 }
 
@@ -158,7 +145,7 @@ void Sistema::lancarVoo(int codigo)
     // se o voo inserido não foi cadastrado 
     if (voo == nullptr)
     {
-        cout << "O voo que você deseja lançar não foi cadastrado" << endl;
+        cout << "O voo que você deseja lançar não foi cadastrado." << endl;
         return;
     }
 
@@ -190,7 +177,7 @@ void Sistema::explodirVoo(int codigo)
     // voo não encontrado
     if (voo == nullptr)
     {
-        cout << "O voo que você deseja lançar não foi cadastrado" << endl;
+        cout << "O voo que você deseja explodir não foi cadastrado." << endl;
         return;
     }
 
@@ -222,7 +209,7 @@ void Sistema::finalizarVoo(int codigo)
     // voo não encontrado
     if (voo == nullptr)
     {
-        cout << "O voo que você deseja lançar não foi cadastrado." << endl;
+        cout << "O voo que você deseja finalizar não foi cadastrado." << endl;
         return;
     }
 
@@ -303,5 +290,4 @@ void Sistema::listarMortos()
             cout << endl << endl;
         }
     }
-
 }
